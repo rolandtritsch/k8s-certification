@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bad
+  labels:
+    app: bad
+spec:
+  selector:
+    matchLabels:
+      app: bad
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bad
+    spec:
+      containers:
+        - name: bad
+          image: 'quay.io/shimmur/bad:c571dd3-local-build'
