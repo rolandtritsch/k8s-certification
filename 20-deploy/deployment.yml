@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: bad
-          image: 'quay.io/shimmur/bad:c571dd3-local-build'
+          image: 'quay.io/shimmur/bad:latest'
